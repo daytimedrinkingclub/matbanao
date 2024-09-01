@@ -1,4 +1,7 @@
 # matbanao
+# System Architecture
+
+```mermaid
 graph TD
     A[User Input] --> B[API Endpoint]
     B --> C{Sufficient Dataset?}
