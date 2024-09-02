@@ -1,0 +1,167 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.idea-evaluator {
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .header {
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .toggle-mode-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  
+  .content {
+    text-align: left;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .idea-input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: background-color 0.2s, border-color 0.2s;
+    color: inherit; /* Inherits text color */
+  }
+  
+  .evaluate-btn {
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 0.75rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    border: none;
+  }
+  
+  .evaluation-result {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .evaluation-novelty {
+    color: var(--novelty-color);
+  }
+  
+  .evaluation-worth {
+    color: var(--worth-color);
+  }
+  
+  /* Light Mode */
+  .light-mode {
+    background-color: #f7fafc;
+    color: #1a202c;
+  }
+  
+  .light-mode .toggle-mode-btn {
+    background-color: #edf2f7;
+    color: #1a202c;
+  }
+  
+  .light-mode .toggle-mode-btn:hover {
+    background-color: #e2e8f0;
+  }
+  
+  .light-mode .idea-input {
+    background-color: #fff;
+    border-color: #e2e8f0;
+  }
+  
+  .light-mode .evaluate-btn {
+    background-color: #3182ce;
+    color: #fff;
+  }
+  
+  .light-mode .evaluate-btn:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .light-mode .evaluation-result {
+    background-color: #ebf8ff;
+  }
+  
+  .light-mode .evaluation-novelty {
+    --novelty-color: #2b6cb0;
+  }
+  
+  .light-mode .evaluation-worth {
+    --worth-color: #2f855a;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #111827;
+    color: #d1d5db;
+  }
+  
+  .dark-mode .toggle-mode-btn {
+    background-color: #fde047;
+    color: #111827;
+  }
+  
+  .dark-mode .toggle-mode-btn:hover {
+    background-color: #facc15;
+  }
+  
+  .dark-mode .idea-input {
+    background-color: #1f2937;
+    border-color: #374151;
+  }
+  
+  .dark-mode .evaluate-btn {
+    background-color: #2563eb;
+    color: #fff;
+  }
+  
+  .dark-mode .evaluate-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .dark-mode .evaluation-result {
+    background-color: #374151;
+  }
+  
+  .dark-mode .evaluation-novelty {
+    --novelty-color: #93c5fd;
+  }
+  
+  .dark-mode .evaluation-worth {
+    --worth-color: #6ee7b7;
+  }
+  
